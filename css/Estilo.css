@@ -1,0 +1,638 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 1px solid red; */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ul,nav{
+    list-style: none;
+}
+
+.titulo{
+    text-align: center; 
+    font-size: 1.5rem;  
+    text-transform: uppercase;
+}
+
+.btn{
+    background-color: #0677e7;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(65deg, #0000006b, #0000ff23), url(../img/airport-1822133_1920.jpg);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contant{
+    width: 80%;
+    margin: 0px auto;
+}
+.container header{
+    width: 100%;
+    height: 60px;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container header nav.menu ul{
+    display: flex;
+}
+
+.container header nav.menu ul li{
+    padding: 10px 10px;
+}
+.container header .logo{
+    color: white;
+    border-bottom: 10px solid white;
+}
+
+.container header .logo span{
+    color:#0677e7;
+    
+    border-bottom: 11px solid #0677e7;
+}
+
+/* trabalhando com o banner */
+
+.container section.banner{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container section.banner .text h1{
+    color: #0677e7;
+    margin-bottom: 10px;
+    font-size:2.5rem;
+}
+
+.container section.banner .text{
+    font-size:2rem;
+    color:#fff;
+}
+
+.container section.banner .text .paragraf{
+    font-size:1.3rem;
+    width: 70%;
+    margin-bottom: 5px;
+}
+
+.container section.banner .text button{
+    padding: 10px 15px;
+    border: none;
+    background-color:#0677e7;
+    border-radius: 8px;
+    
+}
+
+/* trabalhando no main. */
+
+main {
+    width:100%;
+    height:auto;
+    padding: 30px 0px 0px 0px;
+}
+
+main section.sobre{
+    padding:5rem 0rem;
+}
+main section.sobre ul{
+    display: flex;
+
+    padding: 10px 0px 30px;
+}
+
+main section.sobre ul li{
+    width: 50%;
+}
+
+main section.sobre ul li:first-child{
+    height: auto;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+main section.sobre ul li:first-child img{
+
+    background-color: teal;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+main section.sobre ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+
+    
+}
+
+main section.sobre ul li h3{
+    font-size: 1.3rem;  
+    text-transform: uppercase;
+    line-height: 2.5;
+}
+
+main section.sobre ul li p{
+    width: 85%;
+    
+}
+
+main section.sobre ul li button{
+    padding: 8px 18px;
+    background: #0677e7;
+    border-radius: 8px;
+    color: white;
+    border: none;
+
+    margin-top:10px;
+}
+
+main section.galeria{
+    
+    padding: 0rem 0rem 6rem;
+
+    width: 100%;
+    height: auto;
+}
+
+
+
+main section.galeria .legenda{
+    text-align: center; 
+    margin-bottom: 28px;
+    font-size: .9rem;
+    color: #7c7c7c;
+}
+main section.galeria .cards{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+main section.galeria .card{
+    
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 2px ;
+    border-radius: 9px;
+    padding: .2rem .2rem .5rem;
+}
+
+main section.galeria .cards .card img{
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 9px 9px 0px 0px; 
+}
+
+main section.galeria .cards .card img:hover{
+    background-color: #0677e7;
+    z-index: 100;
+}
+main section.galeria .cards .card .card-body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+    padding: 5px 0px;
+}
+main section.galeria .cards .card .card-title{
+    font-size: 1.5rem;
+    text-align: center;
+
+    /* padding: 10px 0px; */
+    color: #3d3c3c;
+}
+
+main section.galeria .cards .card .card-text{
+    text-align: center;
+    font-size: .8rem;
+    padding: 0px 20px;
+    color: #8d8585;
+}
+
+main section.galeria .cards .card .btn-card{
+    margin-bottom: .2rem;
+    
+}
+
+
+/* Trabalhando com o call-center */
+
+main section.call{
+    padding: 5rem 0rem;
+    background:linear-gradient(65deg, #0000008e, #0000ff5b), url(../img/venice-3130323_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    
+    display: flex;
+    align-items: center;
+}
+
+main section.call ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+main section.call ul li h3{
+    color: white;
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+main section.call ul li p{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+main section.call ul li button{
+    padding: 8px 18px;
+    background: #0677e7;
+    border-radius: 8px;
+    color: white;
+    border: none;
+}
+
+/* localização.. */
+main section.local {
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    
+    padding: 50px 0px;
+}
+
+main section.local h2{
+    margin-bottom: 10px;
+}
+
+main section.local ul{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+main section.local ul li{
+    flex-basis: 50%;
+    height: auto;
+}
+
+main section.local ul li:first-child{
+    display:flex;
+    align-items: center;
+}
+
+
+main section.local ul li:first-child p{
+    width: 90%;
+    margin-top: 10px;
+}
+
+main section.local ul li .img:last-child{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+main section.local ul li .img iframe{
+    width: 100%;
+    height: 300px;
+
+}
+
+/* newslater */
+main .newslater{
+    padding:5rem 0rem;
+}
+
+main .newslater h2{
+    margin-bottom: 10px;
+}
+main .contacto{
+    display: flex;
+    padding: 0px 0px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px black;
+
+  
+
+}
+
+main .newslater{
+    background-color: #0677e7;
+    color: #fff;
+}
+
+main .newslater p{
+    width: 50%;
+    margin-bottom: 20px;
+    
+}
+main .contacto div{
+    width: 50%;
+    height: 500px;
+}
+
+main .contacto .minima{
+    background-color: #fff;
+    display: flex;
+
+    border-radius: 0px 10px 10px 0px;
+}
+
+main .contacto .minima {
+    width: 100%;
+    background-image: url(../img/destination-12.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+}
+
+main .formulario{
+    background-color: #fff;
+    border-radius: 8px 0px 0px 8px ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .formulario .width-form{
+    
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+main .formulario form {
+    width:100% ;
+    display: flex;
+    flex-direction: column;
+    
+
+
+}
+
+main .formulario form label{
+    padding: 5px ;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+}
+
+main .formulario form input,textarea{
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    background-color: #dad8d8;
+}
+
+main .formulario form input:hover{
+    margin-left: 20px;
+    transition: 0.6s ease-out;
+}
+main .formulario form textarea:hover{
+    margin-left: 20px;
+    transition: 0.6s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* trabalhando com o footer */
+footer{
+    width: 100%;
+    height: auto;
+    
+    
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: rebeccapurple;
+}
+
+.footer-backgound{
+    background-image: url(../img/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+footer .contant{
+    display: flex;
+    justify-content: space-between;
+    color: #fff ;
+    
+    padding: 30px 0px;
+   
+}
+
+footer .contant div{
+    width: 50%;
+    height: 100px;
+}
+
+
+/*footer .contant .text-footer{
+    
+}*/
+
+footer .contant .text-footer p{
+    width: 80%;
+    
+}
+
+footer .contant .logo {
+    width: 13%;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+
+    border-top:10px solid #fff;
+}
+
+footer .contant .logo span{
+    color: #0677e7;
+    border-top:10px solid #0677e7;
+}
+
+footer .fim .content{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+
+}
+
+footer .fim{
+    background-color: #0677e7;
+}
+
+/* 
+.header-logo{ float: left; position: relative;}
+.header-logo::after{content: ""; position: absolute; width: 100%; height: 24px; background: #fff; top: -30px; left: 0;} 
+.header-logo::before{content: ""; position: absolute; width: 37%; height: 24px; background: #579add; top: -30px; right: 0; z-index: 2;} 
+
+.header-logo{
+    float: left;
+}
+.header-logo h1{
+    font-size: 40px;
+    
+}
+.header-logo h1 span{
+    color: #579add;
+}
+
+.Menu{
+    float: right ;
+    padding: 10px 0;
+}
+.Menu ul li{
+    display: inline-block;
+    margin-left: 40px;
+    text-align: right;
+   
+}
+
+
+.destaque{
+    font-size: 26px;
+    text-align: center;
+    margin: 10px 0 50px 0;
+}
+.destaque h1{
+    font-size: 50px;
+    font-weight: normal; 
+    color: #579add;
+    margin-bottom: 10px;
+}
+.destaque p{
+    margin-bottom: 10px;
+}
+
+
+.destaque button{
+    margin-top: 20px;
+    background-color: #ea2ae8;
+    padding: 5px 10px;
+    border:none;
+    border-radius: 8px;
+}
+.destaque button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.linha .foth{
+    background: #fff;
+    color: #fff;
+    background-image: url(IMG/1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height:160px ;
+}
+
+.parag{
+    float: left;
+    padding: 10px 0;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.parag h1{
+    text-align: left;
+    font-size: 19px;
+    margin-bottom:10px ;
+}
+
+.foth{padding: 30px 0;}
+
+.parag p{
+    width: 300px;
+}
+
+.foth-logo{
+    float: right;
+    margin-bottom: 50px;
+}
+.foth-logo h1{
+    font-size: 40px;
+    
+}
+.foth-logo h1 span{
+    color: #579add;
+}
+
+.foth-logo{ float: right; position: relative;}
+.foth-logo::after{content: ""; position: absolute; width: 100%; height: 24px; background: #fff; top: -30px; left: 0;} 
+.header-logo::before{content: ""; position: absolute; width: 37%; height: 24px; background: #579add; top: -30px; right: 0; z-index: 2;} 
+
+
+
+.contato{ float: left;}
+.emp{float: right;} 
+ */
+
